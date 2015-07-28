@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/ksmandersen/Projects/thesis",
+			"file_exclude_patterns": [
+				"*.aux", 
+				"*.synctex.gz", 
+				"*.bbl", 
+				"*.blg", 
+				"*.fdb_latexmk", 
+				"*.toc", 
+				"thesis.log"
+			]
+		}
+	]
+}
