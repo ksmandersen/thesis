@@ -30,7 +30,11 @@ This is an abstract
 \chapter{Introduction}
 \label{ch:introduction}
 
-Air quality is a major concern in terms of personal health and environmental factors. Over the years Air quality has declined with the introduction of more and more cars and other pollution sources in the bigger cities. In more recent years the air quality has improved with the introduction of green initiatives. In several reports from the Department of Health in Denmark it has been found that the citizens that breathe the most polluted air are the people on the roads. Several reports suggest that cyclists are the most exposed. In Copenhagen the air quality is measured and monitored only on 3 different streets by the Department of Health. 
+% World-Health-Organization, “Air Pollution.” [Online]. Available: http://www.who.int/topics/air pollution/en/
+
+Air quality has significant impact on human health. The World Health Organization (WHO) estimates that several hundred million people world-wide die prematurely from air pollution induced diseases such as Chronic Obstructive Respiratory Disease (COPD). Medical studies have shown that poor air quality has adverse impact on human health. However, these studies consider aggreagates of populations, and use coarse data pollution levels, often at the city surburb level, taken from traditional fixed monitoring sites operated by governments.\\
+
+In recent years, with the rapid growth of portable sensors, several studies have tried to use participatory sensing and crowdsourcing systems to get fine-gained urban air pollution data, including systems developed here at the IT University of Copenhagen (ITU). \\
 
 At ITU a new project based on the prior research done with NoxDroid is currently running, called bAIR. In this project most problems with prior projects for personal air quality measurements are being addressed such as: 
 
@@ -42,21 +46,122 @@ At ITU a new project based on the prior research done with NoxDroid is currently
 \item Infrastructure for local and Cloud storage 
 \end{itemize}
 
-One aspect that has not been rigorously covered is the user experience, the usability of the sensor system and the evaluation of the system by users.
+One aspect that has not been rigorously covered is the user experience, the usability of the sensor system and the evaluation of the system by users. In this paper we will improve upon the existing systems from the bAir project, by running iterative evualuation studes,
+
+% Air quality is a major concern in terms of personal health and environmental factors. Over the years Air quality has declined with the introduction of more and more cars and other pollution sources in the bigger cities. In more recent years the air quality has improved with the introduction of green initiatives. In several reports from the Department of Health in Denmark it has been found that the citizens that breathe the most polluted air are the people on the roads. Several reports suggest that cyclists are the most exposed. In Copenhagen the air quality is measured and monitored only on 3 different streets by the Department of Health. 
+
+
+\section{Notes on bAir Prototype}
+The current prototype is developed through several iterations of this project, but also previous generations of the project (NoxDroid and SinoxSense). A new iteration of the hardware in the prototype is currently being developed and is unlikely to be the last.\\
+
+The hardware has developed from something that is roughly the size of a can of tomatoes to something that is only the size of a small box of matches. The next iteration is planed to be smaller i size, rougly 3,6 cm in diameter and about 2 cm high. The constraining factor is now the battery. The current iteration will hold battery for about 7 hours of use (depending on the data resolution). The next iteration will likely laster a little longer.\\
+
+The current hardware is at a pretty stable state. The hardware itself has no enclosure, which it will need before it can really be used on a bicycle. The battery is good, and will last several days for comuters. The sensor has fine data and the board for processing is fast enough. There has only been a mintor issue where the Bluetooth connection to the phone would drop once in a while. Wireless connections a volatile in nature so this is to be expected. The software should be as ressiliant to lossing connection as possible. If possible the software should have fail mechanisism that will try to restablish bluetooth connections if lost.\\
+
+The software for the prototype is working but a little outdated. It is dating back a couple of android releases and will likely need to be updated a little bit. I have had quite some issues getting the code to actually run on my android phone. I will need to borrow another device and maybe get some help from Sebastian.
+
+\section{End users}
+We need to find out what the end users actually want. What factors are important for them when using something like this? Is the size, form factor, where it is placed, how easy is it to use? Is charging too anoying? Is it how precise the data is? Or how usefull it is?
+
+Two part: 1. online survey with specific questions. 2. interviews with elaboration based on part 1.
+
+Talk to Sebastian about the collab witht the other University with Environmentalists. Opportunity for piggy backing on hardware/evaluation?
 
 \chapter{Related Work}
 \label{ch:related_work}
 
-\cite{andersen2012noxdroid} A. Andersen, P. Krøgholt, S. Bierre, A. Tabard, NoxDroid – A Bicycle Sensor System for Air Pollution Monitoring\\
+\section{Identified research areas}
 
-\cite{hansen2010sinox} \cite{hansen2012sinoxsense} K. Hansen, N. Kuraszynska, SiNOxSense: A textile-based wearable simple NOx sensing system\\
+The related work can mostly be grouped into the following main areas of research:
 
-\cite{tudose2011mobile} Tudose et al, Mobile Sensors in Air Pollution Measurement\\
+\begin{itemize}
+	\item Air Quality \& Polution
+	\item Wearable Computing
+	\item Mobile Computing
+\end{itemize}
 
-\cite{al2010mobile} A. Al-Ali, A Mobile GPRS-Sensors Array for Air Pollution Monitoring\\
+\section{Related Papers}
+
+% A Wearable and Wireless Sensor System for Real-Time Monitoring of Toxic Environmental Volatile Organic Compounds
+% Terms: VOC, BTEX
+% Categories: Wearable, Mobile
+%
+% Justification for tech: VOCs in the environment impact health. General 
+%							measurements not granular enough => personal device
+%
+% Summary: Design & implementation of a "wearable" (quite large) sensor that
+%			measures VOC's. The devices connects via Bluetooth to users phone.
+%			The device is highly sensitive almost to a fault.
+
+
+% ASSESSMENT OF EXPOSURE TO TRAFFIC-RELATED FUMES DURING THE JOURNEY TO WORK
+% Terms: Benzene, particulates
+% Categories: Air Quality
+% 
+% Summary: A pilot study of relative measurements of pollution between
+% 			different modes of transportation to work. Measured pollution
+% 			was benzene and particulates. Found bikes on roads to have the
+%			highest concentration of particulates and second highest of
+%			benzene. Recommends bike paths and public transport.
+
+% CitiSense: Improving Geospatial Environmental Assessment of Air Quality Using a Wireless Personal Exposure Monitoring System
+% Categories: Air Quality
+%
+% Summary:
+%
+% Snippets:
+% 	- studying long-term exposure to environmental risks has historically been very 
+%		difficult
+%
+% 		= A personal device for measuring air quality / exposure to VOCs could
+%			facilitate studies, and help researchers and doctors to understand
+%			the effects of air quality and exposure to VOCs and their effects
+%			on personal health better.
+%
+% 	- Exposure to air pollution is associated with numerous adverse health outcomes including 
+%		increased cardiopulmonary mortality and hospital admissions, worsening of asthma symptoms 
+%		and accelerated cognitive decline in older women
+%
+%		= justification for the further research into personal exposure and
+%			for helping users to avoid unecessary exposure
+%
+%	- a participatory air quality sensing system that bridges the gap between personal sensing 
+%		and regional measurement to provide micro-level detail at a regional scale
+%
+%		= helpfull tool for researchers?
+
+
+
+\section{Common Acronyms \& More}
+
+\begin{itemize}
+	\item \textbf{BTEX}: \textit{Benzene, Toluene, Ethylbenzene and Xylene's. These are VOCs found in petroleum and derivatives such as Gasoline}
+	\item \textbf{VOC}: \textit{Volatile Organic Compound. These are organic chemicals that have a high vapor pressure at room temperature. These compounds have a low boiling point}
+\end{itemize}
+
+
+% \section{WearAir: Expressive T-shirts for Air Quality Sensing}
+
+% \begin{itemize}
+% \item \cite{andersen2012noxdroid} A. Andersen, P. Krøgholt, S. Bierre, A. Tabard, NoxDroid – A Bicycle Sensor System for Air Pollution Monitoring\\
+
+% \item \cite{hansen2010sinox} \cite{hansen2012sinoxsense} K. Hansen, N. Kuraszynska, SiNOxSense: A textile-based wearable simple NOx sensing system\\
+
+% \item \cite{tudose2011mobile} Tudose et al, Mobile Sensors in Air Pollution Measurement\\
+
+% \item \cite{al2010mobile} A. Al-Ali, A Mobile GPRS-Sensors Array for Air Pollution Monitoring\\
+% \end{itemize}
 
 \chapter{Design}
 \label{ch:design}
+
+% What are the things that matter in the design of this thing?
+% - Usefulnes (Will people find it useful? Does it provide insight / useful feedback?)
+% - Usability (Is it easy to use? Is it easy to understand the feedback?)
+% - Form factor (how big is it? How much does it weigh?)
+% - Usage friction (Is is cumbersome to remember it? Is it annyoing to charge?)
+% - Design (Is it pretty? Is it fashionable? Does it look weird or ugly?)
+% - Precision (How precise is the data? Does precision matter?)
 
 \chapter{Evaluation}
 \label{ch:evaluation}

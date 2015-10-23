@@ -267,6 +267,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "paper/thesis.tex",
+			"settings":
+			{
+				"buffer_size": 2669,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "diary/2015-07-15.md",
+			"settings":
+			{
+				"buffer_size": 4123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "paper/references.bib",
+			"settings":
+			{
+				"buffer_size": 1196,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -370,11 +394,11 @@
 	"expanded_folders":
 	[
 		"/Users/ksmandersen/Projects/thesis",
-		"/Users/ksmandersen/Projects/thesis/diary",
-		"/Users/ksmandersen/Projects/thesis/paper"
+		"/Users/ksmandersen/Projects/thesis/diary"
 	],
 	"file_history":
 	[
+		"/Users/ksmandersen/Projects/thesis/thesis.sublime-project",
 		"/Users/ksmandersen/Projects/thesis/paper/thesis.tex",
 		"/Users/ksmandersen/Projects/thesis/paper/references.bib",
 		"/Users/ksmandersen/Projects/thesis/diary/2015-07-28.md",
@@ -501,8 +525,7 @@
 		"/Users/ksmandersen/Dropbox/sasu_thoughts.markdown",
 		"/Users/ksmandersen/Projects/itu-thesis/acm-sigchi.bst",
 		"/Users/ksmandersen/Projects/itu-thesis/example.bib",
-		"/Users/ksmandersen/Projects/itu-thesis/sigchi.cls",
-		"/Users/ksmandersen/Projects/itu-thesis/example.pdf"
+		"/Users/ksmandersen/Projects/itu-thesis/sigchi.cls"
 	],
 	"find":
 	{
@@ -670,8 +693,99 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "paper/thesis.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "diary/2015-07-15.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3992,
+								3992
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1479.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "paper/references.bib",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								522,
+								522
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -692,11 +806,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -708,7 +829,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 155.0
+		"height": 91.0
 	},
 	"output.find_results":
 	{
@@ -727,6 +848,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"bib",
+				"paper/references.bib"
+			],
+			[
+				"thesis",
+				"paper/thesis.tex"
+			],
 			[
 				"front",
 				"assets/js/_frontpage.coffee"
@@ -1192,10 +1321,6 @@
 				"example.tex"
 			],
 			[
-				"bib",
-				"example.bib"
-			],
-			[
 				"tex",
 				"example.tex"
 			],
@@ -1247,7 +1372,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 271.0,
 	"status_bar_visible": true,
 	"template_settings":
